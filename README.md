@@ -1,9 +1,5 @@
 # Efficient PS
 
-Disclaimer: This is a personal project, where I recoded Efficient PS in a month.
-Feel free to use my code. Note that the authors also shared their code.
-
-
 Paper: [Efficient PS](http://panoptic.cs.uni-freiburg.de/#main)
 
 Code from the authors: [here](https://github.com/DeepSceneSeg/EfficientPS)
@@ -30,15 +26,11 @@ CITYSCAPES_DATASET=/path/to/abovementioned/cityscapes python cityscapesscripts/p
 ```
 - Install [pytorch](https://pytorch.org/)
 ```
-pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio===0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+pip install torch==2.5.0
 ```
 - Install [Albumentation](https://albumentations.ai/)
 ```
 pip install -U albumentations
-```
-- Install [Pytorch lighting](https://www.pytorchlightning.ai/)
-```
-pip install pytorch-lightning
 ```
 - Install [Inplace batchnorm](https://github.com/mapillary/inplace_abn)
 ```
@@ -55,6 +47,10 @@ python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
 - Install [Panoptic api](https://github.com/cocodataset/panopticapi)
 ```
 pip install git+https://github.com/cocodataset/panopticapi.git
+```
+- Install [Pytorch lighting](https://www.pytorchlightning.ai/). Due to compatability issues use `pip==24.0.0`
+```
+pip install pytorch-lightning==1.5.8
 ```
 - Modify `config.yaml`
 - Run `train_net.py`
